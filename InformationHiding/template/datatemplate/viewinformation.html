@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<title> UserDataViewPage </title>
+
+<h1>  Users Information!! </h1>
+
+    {% for i in informations %}
+
+        <p>
+
+            <h3> Username: {{i.realuser.userName}}</h3> <br>
+            {{i.imageName}} <br>
+            {{i.Date}} <br>
+
+        </p>
+
+    {% endfor %}
+
+{% endblock content %}

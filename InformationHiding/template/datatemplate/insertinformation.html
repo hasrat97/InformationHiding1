@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<title> UserDataInsertPage </title>
+<h1> Insert User's Data </h1>
+    <form method="post">
+
+    {{ insertform.as_p }}
+
+        {% csrf_token %}
+        <input type="submit">
+
+    </form>
+{% endblock content %}
